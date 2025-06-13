@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credits</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main_credits_wrapper">
+        <div class="main_credits">
+          <div class="logo">
+            <img src="./assets/logo.svg" alt="" />
+          </div>
+
+          <div class="players_names">
+            <div class="players_name">
+              <div class="active_player_status">
+                <div class="active_player_icon"></div>
+              </div>
+              <div class="players_name_list">
+                <p>Merkulov d.</p>
+                <p>Sluzhiteleva n.</p>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="players_name">
+              <div class="active_player_status"></div>
+              <div class="players_name_list">
+                <p>Khalansky A.</p>
+                <p>Sidorova K.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats_wrapper show_item">
+            <div class="stats_container">
+              <div class="stats">
+                <div class="stats_row">
+                  <div class="stat_item">
+                    <p>3</p>
+                  </div>
+                  <div class="stat_item stat_item_selected">
+                    <p>6</p>
+                  </div>
+                  <div class="stat_item stat_item_selected">
+                    <p>6</p>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="stats_row">
+                  <div class="stat_item stat_item_selected">
+                    <p>6</p>
+                  </div>
+                  <div class="stat_item">
+                    <p>3</p>
+                  </div>
+                  <div class="stat_item">
+                    <p>3</p>
+                  </div>
+                </div>
+              </div>
+              <div class="stats_finally">
+                <div class="stats_finally_item">
+                  <p>0</p>
+                </div>
+                <div class="stats_finally_item">
+                  <p>0</p>
+                </div>
+              </div>
+            </div>
+            <div class="court_item">
+              <p>court 2</p>
+            </div>
+          </div>
+
+          <!-- <div class="percents_wrapper">
+            <div class="percents">
+              <div class="percents_list">
+                <div class="percent_item">
+                  <span>munoz</span>
+                  <p>60%</p>
+                </div>
+                <div class="line"></div>
+                <div class="percent_item">
+                  <span>vilarino</span>
+                  <p>62%</p>
+                </div>
+              </div>
+              <div class="percents_list">
+                <div class="percent_item">
+                  <p>61%</p>
+                  <span>leygut</span>
+                </div>
+                <div class="percent_item">
+                  <p>64%</p>
+                  <span>windahl</span>
+                </div>
+              </div>
+            </div>
+            <div class="series">
+              <p>
+                % <br />
+                ПЕРВОЙ <br />
+                ПОДАЧИ
+              </p>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="match_point">
+          <p>matсh point</p>
+        </div>
+      </div>
+
+      <div class="fixed_nots">
+        <div class="fixed_not">
+          <div class="fixed_not_top">
+            <p>СУДЬЯ НА ВЫШКЕ</p>
+          </div>
+          <div class="fixed_not_btn">
+            <p>ИВАНОВ ИВАН</p>
+          </div>
+        </div>
+        <div class="fixed_not">
+          <div class="fixed_not_top">
+            <p>ЖРЕБИЙ МАТЧА</p>
+          </div>
+          <div class="fixed_not_btn">
+            <p>ИВАНОВ - ПОДАЧА</p>
+          </div>
+        </div>
+
+        <div class="fixed_not">
+          <div class="fixed_not_top">
+            <p>ГЕЙМ</p>
+          </div>
+          <div class="fixed_not_btn">
+            <p>1 МИН 35 СЕК</p>
+          </div>
+        </div>
+
+        <div class="fixed_not match_time_not">
+          <div class="fixed_not_top">
+            <div class="match_time">
+              <img src="./assets/clock.svg" alt="" />
+              <p>ВРЕМЯ МАТЧА</p>
+            </div>
+          </div>
+          <div class="fixed_not_btn">
+            <p>2:29</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- test -->
+      <div class="test_btns">
+    
+        <button class="test" onclick="showStats()">Stats</button>
+        <!-- <button class="test" onclick="showPercents()">Percents</button> -->
+
+        <button class="test" onclick="showMatchPoint()">Match point</button>
+        <button class="test" onclick="cycleShowItems()">Notifications</button>
+      </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
