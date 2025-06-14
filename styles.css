@@ -20,7 +20,7 @@ body {
   position: relative;
 }
 .line {
-  width: 100%;
+  width: 96%;
   height: 1px;
   background: #fff;
   position: absolute;
@@ -28,14 +28,17 @@ body {
   left: 10px;
   top: 60px;
 }
-
+.stats .line,
+.percents_wrapper .line {
+  left: 0;
+}
 .main_credits_wrapper {
   position: relative;
 }
 
 .main_credits {
   position: relative;
-  overflow: hidden;
+
   display: flex;
   align-items: center;
   z-index: 10;
@@ -106,8 +109,8 @@ body {
   height: 61px;
 }
 
-.stat_item p,
-.stats_finally_item p {
+.stat_item span,
+.stats_finally_item span {
   color: #ffffff;
 
   font-weight: 700;
@@ -142,14 +145,53 @@ body {
   align-items: start;
 }
 
+.main_credits_wrapper {
+  height: 210px;
+  width: 900px;
+  overflow: hidden;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
 .stats_wrapper {
   transition: all 0.4s ease;
   height: 143px;
   background: #0b1a55;
-  transform: translateX(-100%);
+  position: absolute;
+  right: 0;
   transition: all 1s ease;
 }
-.stats_wrapper.show_item {
+.percents_wrapper {
+  position: absolute;
+  right: 1px;
+}
+.breakpoint {
+  height: 143px;
+  background: rgb(32, 58, 173);
+  padding: 0 40px 0 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  transition: all 1s ease;
+}
+.breakpoint p {
+  color: rgb(255, 255, 255);
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.stats_wrapper.show_item,
+.percents_wrapper.show_item,
+.breakpoint.show_item {
+  transform: translateX(100%);
+  transition: all 1s ease;
 }
 
 .stat_item p {
@@ -158,7 +200,6 @@ body {
 
 .stat_item p.animated {
   transform: scale(1.5);
-
 }
 
 .stats_finally {
@@ -196,6 +237,7 @@ body {
   transform: translateY(-100%);
   position: absolute;
   transition: all 1s ease;
+  bottom: 2px;
 }
 
 .match_point p {
@@ -261,7 +303,6 @@ body {
   padding-top: 4px;
 
   height: 143px;
-  transform: translateX(-100%);
 
   transition: all 1s ease;
 }
@@ -340,4 +381,22 @@ body {
 .test_btns button {
   width: 100px;
   height: 50px;
+}
+
+.stat_item {
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.score_wrapper {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  transform: translateY(0%);
+}
+.stats_finally_item {
+  overflow: hidden;
 }

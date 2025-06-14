@@ -10,10 +10,11 @@
     <div class="wrapper">
       <div class="main_credits_wrapper">
         <div class="main_credits">
+          <!-- logo -->
           <div class="logo">
             <img src="./assets/logo.svg" alt="" />
           </div>
-
+          <!-- players list -->
           <div class="players_names">
             <div class="players_name">
               <div class="active_player_status">
@@ -34,6 +35,7 @@
             </div>
           </div>
 
+          <!-- stats -->
           <div class="stats_wrapper show_item">
             <div class="stats_container">
               <div class="stats">
@@ -75,7 +77,8 @@
             </div>
           </div>
 
-          <!-- <div class="percents_wrapper">
+          <!-- percents -->
+          <div class="percents_wrapper">
             <div class="percents">
               <div class="percents_list">
                 <div class="percent_item">
@@ -106,7 +109,11 @@
                 ПОДАЧИ
               </p>
             </div>
-          </div> -->
+          </div>
+
+          <div class="breakpoint">
+            <p>BREAK POINT</p>
+          </div>
         </div>
 
         <div class="match_point">
@@ -114,57 +121,16 @@
         </div>
       </div>
 
-      <div class="fixed_nots">
-        <div class="fixed_not">
-          <div class="fixed_not_top">
-            <p>СУДЬЯ НА ВЫШКЕ</p>
-          </div>
-          <div class="fixed_not_btn">
-            <p>ИВАНОВ ИВАН</p>
-          </div>
-        </div>
-        <div class="fixed_not">
-          <div class="fixed_not_top">
-            <p>ЖРЕБИЙ МАТЧА</p>
-          </div>
-          <div class="fixed_not_btn">
-            <p>ИВАНОВ - ПОДАЧА</p>
-          </div>
-        </div>
-
-        <div class="fixed_not">
-          <div class="fixed_not_top">
-            <p>ГЕЙМ</p>
-          </div>
-          <div class="fixed_not_btn">
-            <p>1 МИН 35 СЕК</p>
-          </div>
-        </div>
-
-        <div class="fixed_not match_time_not">
-          <div class="fixed_not_top">
-            <div class="match_time">
-              <img src="./assets/clock.svg" alt="" />
-              <p>ВРЕМЯ МАТЧА</p>
-            </div>
-          </div>
-          <div class="fixed_not_btn">
-            <p>2:29</p>
-          </div>
-        </div>
-      </div>
-
       <!-- test -->
       <div class="test_btns">
-    
         <button class="test" onclick="showStats()">Stats</button>
-        <!-- <button class="test" onclick="showPercents()">Percents</button> -->
-
+        <button class="test" onclick="showPercents()">Percents</button>
+        <button class="test" onclick="showBreak()">Break Point</button>
         <button class="test" onclick="showMatchPoint()">Match point</button>
-        <button class="test" onclick="cycleShowItems()">Notifications</button>
       </div>
     </div>
 
-    <script src="./scripts.js"></script>
+    <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/numbers.js"></script>
   </body>
 </html>
