@@ -1,30 +1,36 @@
 function incrementScore(statItem) {
   const wrapper = statItem.querySelector(".score_wrapper");
   const currentSpan = wrapper.querySelector(".score");
-  const current = parseInt(currentSpan.textContent);
-  const updated = current + 1;
+  const currentValue = parseInt(currentSpan.textContent);
+  const nextValue = currentValue + 1;
 
-  // Создаём следующий элемент
+  // Новый элемент
   const spanNext = document.createElement("span");
   spanNext.className = "score next";
-  spanNext.textContent = updated;
+  spanNext.textContent = nextValue;
+
+  // Подготовка классов
+  currentSpan.classList.add("current");
   wrapper.appendChild(spanNext);
 
-  // Анимация
+  // Анимация через requestAnimationFrame
   requestAnimationFrame(() => {
-    wrapper.style.transform = "translateY(70%)";
+    currentSpan.style.transform = "translateY(-100%)";
+    spanNext.style.transform = "translateY(0%)";
   });
 
-  setTimeout(() => {
+  // После анимации
+  spanNext.addEventListener("transitionend", () => {
     wrapper.innerHTML = "";
     const final = document.createElement("span");
     final.className = "score";
-    final.textContent = updated;
+    final.textContent = nextValue;
     wrapper.appendChild(final);
-    wrapper.style.transform = "translateY(0)";
     updateStatItemClasses();
-  }, 300);
+  }, { once: true });
 }
+
+
 
 function updateStatItemClasses() {
   const allItems = document.querySelectorAll(".stat_item, .stats_finally_item");

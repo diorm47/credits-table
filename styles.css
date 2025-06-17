@@ -159,7 +159,7 @@ body {
   height: 143px;
   background: #0b1a55;
   position: absolute;
-  right: 0;
+  right: 2px;
   transition: all 1s ease;
 }
 .percents_wrapper {
@@ -399,4 +399,18 @@ body {
 }
 .stats_finally_item {
   overflow: hidden;
+}
+
+.score_wrapper span {
+  transition: transform 0.2s ease-in-out;
+}
+
+.score_wrapper .score.current {
+  transform: translateY(0%);
+  z-index: 1;
+}
+
+.score_wrapper .score.next {
+  transform: translateY(100%);
+  z-index: 2;
 }

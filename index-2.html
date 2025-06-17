@@ -9,7 +9,7 @@
   <body>
     <div class="wrapper">
       <div class="fixed_nots">
-        <div class="fixed_not">
+        <div class="fixed_not not1">
           <div class="fixed_not_top">
             <p>СУДЬЯ НА ВЫШКЕ</p>
           </div>
@@ -17,7 +17,7 @@
             <p>ИВАНОВ ИВАН</p>
           </div>
         </div>
-        <div class="fixed_not">
+        <div class="fixed_not not2">
           <div class="fixed_not_top">
             <p>ЖРЕБИЙ МАТЧА</p>
           </div>
@@ -26,7 +26,7 @@
           </div>
         </div>
 
-        <div class="fixed_not">
+        <div class="fixed_not not3">
           <div class="fixed_not_top">
             <p>ГЕЙМ</p>
           </div>
@@ -35,7 +35,7 @@
           </div>
         </div>
 
-        <div class="fixed_not match_time_not">
+        <div class="fixed_not match_time_not not4">
           <div class="fixed_not_top">
             <div class="match_time">
               <img src="./assets/clock.svg" alt="" />
@@ -50,10 +50,13 @@
 
       <!-- test -->
       <div class="test_btns">
-        <button class="test" onclick="cycleShowItems()">Notifications</button>
+        <button class="test" onclick="showNot1()">Notification 1</button>
+        <button class="test" onclick="showNot2()">Notification 2</button>
+        <button class="test" onclick="showNot3()">Notification 3</button>
+        <button class="test" onclick="showNot4()">Notification 4</button>
       </div>
     </div>
 
-    <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/notifications.js"></script>
   </body>
 </html>
